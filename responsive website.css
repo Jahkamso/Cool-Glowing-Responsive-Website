@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(red, purple, deeppink);
+  border-radius: 30px;
+}
+body {
+  background: #111;
+  font-family: arial;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container .header {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(45deg, rgb(0, 255, 255, 0.1), rgb(201, 35, 216));
+  height: 50px;
+  align-items: center;
+  color: white;
+}
+.container .header h5 {
+  font-size: 20px;
+  padding: 0px 0px 0px 10px;
+}
+.container .header ul {
+  list-style: none;
+}
+.container .header ul li {
+  margin: 20px;
+}
+.container .header ul li a {
+  margin: 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-family: verdana;
+}
+.container .title-header {
+  background: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.9)),
+    url(desk.webp);
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+  background-position: center;
+}
+.container .title {
+  text-align: center;
+  padding: 150px 0px 0px 0px;
+  color: rgb(201, 138, 226);
+  line-height: 60px;
+}
+.container .title h1 {
+  font-weight: 800;
+  font-size: 50px;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 10px rgb(175, 56, 223), 0px 0px 20px rgb(175, 56, 223),
+    0px 0px 30px rgb(175, 56, 223), 0px 0px 40px rgb(175, 56, 223),
+    0px 0px 50px rgb(175, 56, 223), 0px 0px 60px rgb(175, 56, 223),
+    0px 0px 70px rgb(175, 56, 223);
+}
+.services {
+  margin: 15px 0px 10px 0px;
+  text-align: center;
+  color: aqua;
+  text-shadow: 0px 0px 10px aqua, 0px 0px 20px aqua, 0px 0px 30px aqua;
+}
+.container .product-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .product-section .box1 {
+  text-align: center;
+  background: #fff;
+  margin: 20px 10px 20px 10px;
+  padding: 50px 10px 0px 10px;
+  height: 200px;
+  box-shadow: -5px 5px 5px rgb(11, 210, 236);
+  transition: 1s ease;
+  cursor: pointer;
+}
+.container .product-section .box1:hover {
+  margin-top: -10px;
+}
+.container .product-section .box2:hover {
+  margin-top: -10px;
+}
+.container .product-section .box3:hover {
+  margin-top: -10px;
+}
+.container .product-section .box2 {
+  text-align: center;
+  background: #fff;
+  margin: 20px 10px 20px 10px;
+  padding: 50px 10px 0px 10px;
+  height: 200px;
+  box-shadow: -5px 5px 5px rgb(153, 11, 236);
+  transition: 1s ease;
+  cursor: pointer;
+}
+.container .product-section .box3 {
+  text-align: center;
+  background: #fff;
+  margin: 20px 10px 20px 10px;
+  padding: 50px 10px 0px 10px;
+  height: 200px;
+  box-shadow: -5px 5px 5px rgb(236, 94, 11);
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+.container .product-section .box1 h4 {
+  line-height: 40px;
+  font-size: 19px;
+}
+.container .product-section .box2 h4 {
+  line-height: 40px;
+  font-size: 19px;
+}
+.container .product-section .box3 h4 {
+  line-height: 40px;
+  font-size: 19px;
+}
+@media (max-width: 718px) {
+  .container .header h5 {
+    font-size: 17px;
+    padding: 0px 0px 0px 10px;
+  }
+  .container .header ul {
+    list-style: none;
+  }
+  .container .header ul li {
+    margin: 7px;
+  }
+  .container .header ul li a {
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-family: verdana;
+    font-size: 13px;
+  }
+  .container .product-section {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 150px 0px 150px;
+  }
+  .container .product-section .box1 {
+    text-align: center;
+    background: #fff;
+    margin: 20px 10px 20px 10px;
+    padding: 50px 10px 0px 10px;
+    height: 200px;
+    width: 350px;
+    box-shadow: -5px 5px 5px rgb(11, 210, 236);
+    cursor: pointer;
+  }
+  .container .product-section .box2 {
+    text-align: center;
+    background: #fff;
+    margin: 20px 10px 20px 10px;
+    padding: 50px 10px 0px 10px;
+    height: 200px;
+    width: 350px;
+    box-shadow: -5px 5px 5px rgb(153, 11, 236);
+    cursor: pointer;
+  }
+  .container .product-section .box3 {
+    text-align: center;
+    background: #fff;
+    margin: 20px 10px 20px 10px;
+    padding: 50px 10px 0px 10px;
+    height: 200px;
+    width: 350px;
+    box-shadow: -5px 5px 5px rgb(236, 94, 11);
+    cursor: pointer;
+  }
+}
